@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    padding: 5px 5px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0px 20px;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    background-color: rgb(215, 214, 214);
+    margin: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.startDate {
+    margin-right: 15px;
+}
+
+/* input[type="date"] {
+    height: 30px;
+} */
+
+input,
+select {
+    height: 25px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+input::placeholder {
+    padding-left: 5px;
+    color: rgb(168, 168, 168);
+}
+
+select {
+    color: rgb(168, 168, 168);
+}
+
+.date {
+    margin-left: 7px;
+}
+
+label {
+    font-size: small;
+}
+
+select,
+textarea,
+input:focus {
+    outline: none;
+}
+
+.text {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    color: rgb(87, 87, 247);
+    margin-top: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.assignees {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.assigner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 21px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input,
+select {
+    flex: 1;
+}
+
+.status-priority {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font: inherit;
+    margin-left: 32px;
+}
+
+.status-priority .task:last-child {
+    flex: 1;
+}
+
+.status-priority .task:first-child {
+    margin-right: 15px;
+}
+
+.description-container {
+    display: flex;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.description-container textarea {
+    flex: 1;
+    border-radius: 5px;
+    border-color: grey;
+    padding: 0px 5px;
+    font-family: inherit;
+    resize: horizontal;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.buttons button:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Details</h1>
+        <div class="date">
+            <span class="startDate">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </span>
+
+            <span>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+            </span>
+        </div>
+
+        <p class="text">There is 1 Holiday</p>
+
+        <div class="task">
+            <label for="task">Task Name:</label>
+            <input type="text" id="task" placeholder="Enter task name">
+        </div>
+
+        <div class="assigner">
+            <label for="task">Assigner:</label>
+            <select name="assigner" id="assigner-select" title="Assigner">
+                <option value="" disabled selected>Select an assigner</option>
+                <option value="Kirk">John</option>
+                <option value="Ferdy">Jane</option>
+                <option value="Akwaboah">Bob</option>
+            </select>
+        </div>
+
+        <div class="assignees">
+            <label for="task">Assignee(s):</label>
+            <select name="assignee" id="assignee-select" title="Assigner">
+                <option value="" disabled selected>Select an assignee</option>
+                <option value="Kirk">John</option>
+                <option value="Ferdy">Jane</option>
+                <option value="Akwaboah">Bob</option>
+            </select>
+        </div>
+
+        <div class="status-priority">
+            <div class="task">
+                <label for="task">Status:</label>
+                <select name="status" id="status-select" title="Select Status">
+                    <option value="" disabled selected>Select Status</option>
+                    <option value="Kirk">Not Started</option>
+                    <option value="Ferdy">In-Progress</option>
+                    <option value="Akwaboah">Completed</option>
+                </select>
+            </div>
+            <div class="task">
+                <label for="task">Priority:</label>
+                <select name="priority" id="priority-select" title="Priority">
+                    <option value="" disabled selected>Select Priority</option>
+                    <option value="Kirk">High</option>
+                    <option value="Ferdy">Medium</option>
+                    <option value="Akwaboah">Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="description-container">
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button>Approved</button>
+            <button>Save</button>
+            <button>New</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
